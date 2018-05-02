@@ -1,0 +1,21 @@
+#page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+}
+
+#masthead {
+    grid-area: header;
+}
+
+#content {
+    grid-area: main;
+}
+
+#colophon {
+    grid-area: footer;
+}
